@@ -1,7 +1,7 @@
 # records/management/commands/populate_departments.py
 
 from django.core.management.base import BaseCommand
-from records.models import Department
+from records.models import Department # type: ignore
 
 class Command(BaseCommand):
     help = 'Populate initial departments in the database'
