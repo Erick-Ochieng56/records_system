@@ -42,9 +42,8 @@ Before you begin, ensure you have the following installed:
 ```python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-#### 3. Install Dependencies
-```pip install -r requirements.txt
-```
+#### 3. Install Dependencies:
+```pip install -r requirements.txt```
 
 #### 4. Configure Database:
 
