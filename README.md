@@ -1,7 +1,7 @@
 
 # ROME(Records Management System)
 
-The Records Storage System is a Django-based web application designed to streamline the storage, management, and retrieval of records across multiple departments.
+The Records Storage System is a Django-based web application designed to streamline records storage, management, and retrieval across multiple departments.
 
 
 ## Features
@@ -33,20 +33,20 @@ Before you begin, ensure you have the following installed:
 - Virtualenv (recommended)
 
 ## Setup Instructions
-#### 1.Clone the Repository:
+#### 1. Clone the Repository:
 ``` git clone https://github.com/your-username/application-records-storage.git```
 
 ``` cd application-records-storage```
 
-#### 2.Set Up a Virtual Environment:
+#### 2. Set Up a Virtual Environment:
 ```python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-#### 3.Install Dependencies
+#### 3. Install Dependencies
 ```pip install -r requirements.txt
 ```
 
-#### 4.Configure Database:
+#### 4. Configure Database:
 
 Update the DATABASES section in settings.py with your MySQL credentials:
 ```
@@ -61,18 +61,18 @@ DATABASES = {
     }
 }
 ```
-#### Apply Migrations:
+#### 5. Apply Migrations:
 
 ```
 python manage.py migrate
 ```
 
-#### Collect Static Files:
+#### 6. Collect Static Files:
 ```
 python manage.py collectstatic 
 ```
 
-#### Run the Development Server:
+#### 7. Run the Development Server:
 ```
 python manage.py runserver
 ```
@@ -81,7 +81,7 @@ Alternatively, for production:
 waitress-serve --port=8000 records_storage.wsgi:application
 ```
 
-#### Access the Application:
+#### 8. Access the Application:
 
 Development: `http://127.0.0.1:8000`
 
@@ -89,15 +89,15 @@ Production: Replace `127.0.0.1` with your server's IP
 
 ## Usage
 
-#### 1.Admin Panel:
+#### 1. Admin Panel:
 - URL: ```/admin```
 - Default login: Update via Django admin interface.
 
-#### 2.User Authentication:
+#### 2. User Authentication:
 - Register and verify email.
 - Enable two-factor authentication for added security.
 
-#### 3.Record Management:
+#### 3. Record Management:
 - Upload, categorize, and manage department-specific files.
 ## Static Files
 - Static files (CSS, JS) are managed using Django's `collectstatic`.
