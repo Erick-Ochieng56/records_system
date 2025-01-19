@@ -16,7 +16,7 @@ sqlparse==0.5.1
 typing_extensions==4.12.2
 tzdata==2024.1
 uvicorn==0.31.0
-virtualenv==20.26.3
+virtualenv==20.26.6
 virtualenvwrapper-win==1.2.7
 waitress==3.0.1
 whitenoise==6.7.0
